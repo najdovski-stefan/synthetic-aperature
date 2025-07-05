@@ -10,3 +10,4 @@ This project uses Unstructured Light Fields to simulate depth of field
 
 # References:
 - [Unstructured Light Fields](https://people.csail.mit.edu/abedavis/ULF/).
+- [Confocal Imaging](https://graphics.stanford.edu/papers/confocal/)
