@@ -32,7 +32,7 @@ struct UIState {
     bool auto_fit_output = true;
 
     bool processing_in_progress = false;
-    std::string last_process_message = "";
+    std::string last_process_message;
 };
 
 struct TextureManager {
