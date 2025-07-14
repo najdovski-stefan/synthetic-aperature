@@ -15,7 +15,7 @@
 
 ## Template: GPU Focus 
 
-<img src="res/screenshots/gpu.png" width="537>
+<img src="res/screenshots/gpu.png" width="537">
 
 ## How does it work? 
 
