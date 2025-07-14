@@ -453,7 +453,7 @@ int main(int, char**) {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    GLFWwindow* window = glfwCreateWindow(1800, 1200, "Depth from Motion", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1800, 1200, "Synthetic Aperature", nullptr, nullptr);
     if (window == nullptr) return 1;
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);
