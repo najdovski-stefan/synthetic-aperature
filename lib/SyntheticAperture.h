@@ -11,13 +11,16 @@ struct SA_Parameters {
     std::vector<cv::Point> template_points;
     int template_size = 32;
     int search_window_size = 160;
+    int override_width = 0;
+    int override_height = 0;
+    int rotation = 0;
 };
 
 class SyntheticAperture {
 public:
     SyntheticAperture();
 
-    bool loadVideo(const std::string& video_path, int max_frames, int scale);
+    bool loadVideo(const std::string& video_path, const SA_Parameters& params);
     bool process(const SA_Parameters& params);
 
     const cv::Mat& getFirstColorFrame() const;

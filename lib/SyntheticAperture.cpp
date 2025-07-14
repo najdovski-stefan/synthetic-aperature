@@ -4,7 +4,7 @@
 SyntheticAperture::SyntheticAperture()
     : m_video_loaded(false), m_is_processed(false), m_status_message("Ready.") {}
 
-bool SyntheticAperture::loadVideo(const std::string& video_path, int max_frames, int scale) {
+bool SyntheticAperture::loadVideo(const std::string& video_path, const SA_Parameters& params) {
     m_status_message = "Loading video...";
     std::cout << "--- Step 1: Loading and Preparing Video Frames ---" << std::endl;
     m_video_loaded = false;
@@ -24,12 +24,24 @@ bool SyntheticAperture::loadVideo(const std::string& video_path, int max_frames,
     }
 
     int frame_count = 0;
-    while (cap.isOpened() && frame_count < max_frames) {
+    while (cap.isOpened() && frame_count < params.max_frames) {
         cv::Mat frame;
         if (!cap.read(frame)) break;
 
+        if (params.override_width > 0 && params.override_height > 0) {
+            cv::resize(frame, frame, cv::Size(params.override_width, params.override_height));
+        }
+
+        if (params.rotation != 0) {
+            cv::Mat rotated_frame;
+            cv::Point2f center((frame.cols - 1) / 2.0, (frame.rows - 1) / 2.0);
+            cv::Mat rot = cv::getRotationMatrix2D(center, params.rotation, 1.0);
+            cv::warpAffine(frame, rotated_frame, rot, frame.size());
+            frame = rotated_frame;
+        }
+
         cv::Mat small_color, small_gray;
-        cv::resize(frame, small_color, cv::Size(), 1.0 / scale, 1.0 / scale);
+        cv::resize(frame, small_color, cv::Size(), 1.0 / params.scale_factor, 1.0 / params.scale_factor);
         cv::cvtColor(small_color, small_gray, cv::COLOR_BGR2GRAY);
 
         m_frames_gray.push_back(small_gray);

@@ -102,7 +102,7 @@ void RenderConfigWindow(SyntheticAperture& processor, SA_Parameters& params, UIS
     ImGui::InputText("##VideoPath", videoPathBuf, sizeof(videoPathBuf));
 
     if (ImGui::Button("Load Video", ImVec2(-1, 0))) {
-        if (processor.loadVideo(videoPathBuf, params.max_frames, params.scale_factor)) {
+        if (processor.loadVideo(videoPathBuf, params)) {
             MatToTexture(processor.getFirstColorFrame(), textures.firstFrameTexture);
             params.template_points.clear();
             ui_state.last_process_message = "Video loaded. Add templates to begin.";
@@ -212,6 +212,11 @@ void RenderPropertiesWindow(SyntheticAperture& processor, SA_Parameters& params,
     ImGui::SeparatorText("Output View");
     ImGui::Checkbox("Auto Fit Output", &ui_state.auto_fit_output);
     if (!ui_state.auto_fit_output) ImGui::SliderFloat("Output Zoom", &ui_state.zoom_output, 0.1f, 5.0f, "%.1fx");
+
+    ImGui::SeparatorText("Video Overrides");
+    ImGui::InputInt("Width", &params.override_width);
+    ImGui::InputInt("Height", &params.override_height);
+    ImGui::SliderInt("Rotation", &params.rotation, 0, 360);
 
     if (processor.isProcessed()) {
         ImGui::SeparatorText("Processing Results");
