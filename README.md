@@ -1,15 +1,21 @@
 # Synthetic Aperature
 
+<img src="res/screenshots/UI.png" width="739">
+
 ## Original without the effect
 
 <img src="res/screenshots/no_effect.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
 
 
-##  Mannequin Focus
+## Template: Mannequin Focus
 <img src="res/screenshots/mannequin_focus.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
 
-## Duck Focus
+## Template: Duck Focus
 <img src="res/screenshots/duck_focus.png" alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
+
+## Template: GPU Focus 
+
+<img src="res/screenshots/gpu.png" width="739">
 
 ## How does it work? 
 
