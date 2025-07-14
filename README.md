@@ -1,5 +1,10 @@
 # Synthetic Aperature
 
+## Original
+
+<img src="res/screenshots/no_effect.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
+
+
 ##  Mannequin Focus
 <img src="res/screenshots/mannequin_focus.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
 
