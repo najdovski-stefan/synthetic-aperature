@@ -1,6 +1,6 @@
 # Synthetic Aperature
 
-<img src="res/screenshots/UI.png" width="739">
+<img src="res/screenshots/UI.png" width="537>
 
 ## Original without the effect
 
@@ -15,7 +15,7 @@
 
 ## Template: GPU Focus 
 
-<img src="res/screenshots/gpu.png" width="739">
+<img src="res/screenshots/gpu.png" width="537>
 
 ## How does it work? 
 
