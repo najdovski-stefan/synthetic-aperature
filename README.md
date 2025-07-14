@@ -1,9 +1,17 @@
 # Synthetic Aperature
 
-We all know that smartphone sensors are small in area size, so they have small opening (aperature), this results in images that are sharp but the so called "bokeh" effect from large opening is not present, blury background as seen in portraits and shallow depth of field.
+##  Mannequin Focus
+<img src="res/screenshots/mannequin_focus.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet">
 
+## Duck Focus
+<img src="res/screenshots/duck_focus.png" alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet">
 
 ## How does it work? 
+We all know that smartphone sensors are small in area size, 
+so its implied that they have small opening (aperature), wll this results in images that are sharp but sadly the so called "bokeh" effect seen on professional dslrs is not present, because dslrs have big sensors and big openings in their optics they have that blury bokeh background as seen in portraits and shallow depth of field.
+
+This gives focus on the subject as well as feeling of depth.
+
 
 This project uses Unstructured Light Fields to simulate depth of field
 
