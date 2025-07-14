@@ -1,6 +1,6 @@
 # Synthetic Aperature
 
-<img src="res/screenshots/UI.png" width="537>
+<img src="res/screenshots/UI.png" width="537">
 
 ## Original without the effect
 
