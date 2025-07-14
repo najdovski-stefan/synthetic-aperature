@@ -1,10 +1,10 @@
 # Synthetic Aperature
 
 ##  Mannequin Focus
-<img src="res/screenshots/mannequin_focus.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet">
+<img src="res/screenshots/mannequin_focus.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
 
 ## Duck Focus
-<img src="res/screenshots/duck_focus.png" alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet">
+<img src="res/screenshots/duck_focus.png" alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
 
 ## How does it work? 
 We all know that smartphone sensors are small in area size, 
