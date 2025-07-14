@@ -4,7 +4,7 @@
 
 ## Original without the effect
 
-<img src="res/screenshots/no_effect.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet" width="537">
+<img src="res/screenshots/no_effect.png"  alt="image of a duck, mannequin and a gpu, background has also a grid of color pallet">
 
 
 ## Template: Mannequin Focus
